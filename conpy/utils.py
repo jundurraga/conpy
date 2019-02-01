@@ -5,7 +5,8 @@ Author: Marijn van Vliet <w.m.vanvliet@gmail.com>
 import numpy as np
 from mne.source_space import (_ensure_src, _get_morph_src_reordering,
                               _ensure_src_subject, SourceSpaces)
-from mne.utils import estimate_rank, warn, get_subjects_dir
+from mne.utils.config import warn, get_subjects_dir
+from mne.rank import estimate_rank
 
 
 def _make_diagonal_noise_matrix(csd, reg):
